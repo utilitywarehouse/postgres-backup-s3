@@ -1,4 +1,4 @@
-FROM postgres:12-alpine
+FROM postgres:15-alpine
 LABEL maintainer="uw-phewitt"
 
 ADD install.sh install.sh

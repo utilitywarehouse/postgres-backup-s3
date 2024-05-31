@@ -1,5 +1,5 @@
 FROM postgres:15-alpine
-LABEL maintainer="uw-phewitt"
+LABEL maintainer="c-goosen"
 
 ADD install.sh install.sh
 RUN sh install.sh && rm install.sh
@@ -18,6 +18,8 @@ ENV S3_PATH 'backup'
 ENV S3_ENDPOINT **None**
 ENV S3_S3V4 no
 ENV SCHEDULE **None**
+
+USER postgres
 
 ADD run.sh run.sh
 ADD backup.sh backup.sh

@@ -1,4 +1,4 @@
-FROM postgres:15-alpine
+FROM postgres:17.4-alpine
 LABEL maintainer="c-goosen"
 
 ADD install.sh install.sh
